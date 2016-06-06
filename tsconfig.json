@@ -5,13 +5,16 @@
     "target": "es5",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
     "moduleResolution": "node",
-    "outDir": "./build"
+    "declaration": true
   },
-  "exclude": [
-    "node_modules",
-    "bundles"
+  "files": [
+    "index.ts",
+    "directives/tealium.directive.ts",
+    "interfaces/tealium-config.ts",
+    "interfaces/view-id-map.ts",
+    "services/tealium.service.ts",
+    "services/tealium-data.service.ts",
+    "typings/index.d.ts"
   ]
 }
