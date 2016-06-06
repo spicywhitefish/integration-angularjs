@@ -1,28 +1,43 @@
 {
-  "name": "angular-tealium",
+  "name": "spicy-tealium",
   "version": "0.0.1",
-  "description": "Tealium AngularJS Integration",
-  "main": "tealium_angular.js",
+  "description": "Tealium Angular Integration",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node node_modules/typescript/bin/tsc",
+    "postinstall": "typings install"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Tealium/integration-angularjs.git"
+    "url": "git://github.com/spicywhitefish/integration-angularjs.git"
   },
   "keywords": [
     "tealium",
     "tags",
     "analytics",
-    "angular"
+    "angular",
+    "angular 2"
   ],
   "author": "Tealium",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Tealium/integration-angularjs/issues"
+    "url": "https://github.com/spicywhitefish/integration-angularjs/issues"
   },
-  "homepage": "https://github.com/Tealium/integration-angularjs#readme",
-  "dependencies": {
-    "angular": ">=1.3.0"
+  "homepage": "https://github.com/spicywhitefish/integration-angularjs#readme",
+  "peerDependencies": {
+    "@angular/core": "^2.0.0-rc.1"
+  },
+  "devDependencies": {
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.35.0",
+    "rimraf": "^2.5.2",
+    "semantic-release": "^4.3.5",
+    "systemjs-builder": "^0.15.19",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+    "uglify-loader": "^1.3.0",
+    "webpack": "^1.13.1"
   }
 }

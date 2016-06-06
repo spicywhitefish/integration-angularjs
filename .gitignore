@@ -1,0 +1,35 @@
+#################
+## Misc
+#################
+nbproject
+manifest.mf
+build.xml
+node_modules/*
+npm-debug.log
+build
+typings
+
+#################
+## JetBrains
+#################
+.idea
+.project
+.settings
+.idea/*
+*.iml
+
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+############
+## Mac
+############
+
+.DS_Store
